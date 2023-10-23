@@ -1,5 +1,5 @@
 # init.lua
-Super simple (neovim)[https://github.com/neovim/neovim] configuration
+Super simple [neovim](https://github.com/neovim/neovim) configuration
 
 ## Requirements
 - python3 (for coq)
@@ -7,12 +7,12 @@ Super simple (neovim)[https://github.com/neovim/neovim] configuration
 - ripgrep (for telescope)
 
 ## Plugins
-- (packer (plugin manager))[https://github.com/wbthomason/packer.nvim]
-- (gruvbox (theme))[https://github.com/ellisonleao/gruvbox.nvim]
-- (vim-fugitive (git tui))[https://github.com/tpope/vim-fugitive]
-- (telescope (file searcher))[https://github.com/nvim-telescope/telescope.nvim]
-- (treesitter (parser))[https://github.com/nvim-treesitter/nvim-treesitter]
-- (coq_nvim (autocompletion))[https://github.com/ms-jpq/coq_nvim] 
+- [packer (plugin manager)](https://github.com/wbthomason/packer.nvim)
+- [gruvbox (theme)](https://github.com/ellisonleao/gruvbox.nvim)
+- [vim-fugitive (git tui)](https://github.com/tpope/vim-fugitive)
+- [telescope (file searcher)](https://github.com/nvim-telescope/telescope.nvim)
+- [treesitter (parser)](https://github.com/nvim-treesitter/nvim-treesitter)
+- [coq_nvim (autocompletion)](https://github.com/ms-jpq/coq_nvim)
 
 ## Keybindings
 ```
