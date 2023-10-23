@@ -1,5 +1,5 @@
-require'nvim-treesitter.configs'.setup {
-  ensure_installed = { 'lua', 'rust', 'javascript', 'typescript' },
+require('nvim-treesitter.configs').setup({
+  ensure_installed = { },
   sync_install = false,
   auto_install = true,
   ignore_install = { },
@@ -7,4 +7,7 @@ require'nvim-treesitter.configs'.setup {
     enable = true,
 		additional_vim_regex_highlighting = false,
   },
-}
+  ident = {
+    enable = true,
+  }
+})
