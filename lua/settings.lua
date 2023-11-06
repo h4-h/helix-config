@@ -13,3 +13,5 @@ vim.opt.fileencoding = 'utf-8'
 vim.opt.ruler = true
 vim.opt.mouse = 'a'
 vim.opt.scrolloff = 8
+vim.opt.shadafile = 'NONE'
+vim.opt.swapfile = false

@@ -1,6 +1,7 @@
 return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'                -- package control
   use 'ellisonleao/gruvbox.nvim'              -- theme
+  use 'nvim-tree/nvim-web-devicons'           -- file icons
   use 'tpope/vim-fugitive'                    -- git tui
 
   use {                                       -- file search
@@ -17,7 +18,9 @@ return require('packer').startup(function(use)
   }
 
   use {                                       -- autocompletion
-    'ms-jpq/coq_nvim',
-    branch = 'coq',
+    'neoclide/coc.nvim',
+    branch = 'release',
   }
+
+  use 'fannheyward/telescope-coc.nvim'        -- coc-telescope bridge
 end)
