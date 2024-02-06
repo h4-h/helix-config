@@ -1,0 +1,39 @@
+[[language]]
+name = "tsx"
+shebangs = ["deno"]
+roots = ["deno.json", "deno.jsonc"]
+file-types = ["jsx", "tsx"]
+language-servers = ["deno-lsp", "tailwindcss-ls"]
+auto-format = true
+
+[[language]]
+name = "typescript"
+shebangs = ["deno"]
+roots = ["deno.json", "deno.jsonc"]
+file-types = ["js", "ts"]
+language-servers = ["deno-lsp", "tailwindcss-ls"]
+auto-format = true
+
+[language-server.deno-lsp]
+command = "deno"
+args = ["lsp"]
+environment = { NO_COLOR = "1" }
+
+[language-server.deno-lsp.config.deno]
+enable = true
+unstable = true
+suggest = { completeFunctionCalls = false, imports = { hosts = { "https://deno.land" = true } } }
+inlayHints.parameterTypes.enabled = true
+inlayHints.variableTypes.enabled = true
+inlayHints.propertyDeclarationTypes.enabled  = true
+inlayHints.functionLikeReturnTypes.enabled = true
+inlayHints.enumMemberValues.enabled = true
+
+[[language]]
+name = "gas"
+language-servers = ["asm-lsp"]
+file-types = ["s"]
+indent = { tab-width = 2, unit = " " }
+
+[language-server.asm-lsp]
+command = "asm-lsp"

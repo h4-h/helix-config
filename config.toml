@@ -1,0 +1,35 @@
+theme = "gruvbox"
+
+[editor]
+line-number = "relative"
+scrolloff = 8
+middle-click-paste = false
+completion-replace = true
+
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.lsp]
+display-inlay-hints = true
+
+[editor.whitespace]
+space = "all"
+tab = "all"
+newline = "none"
+
+[editor.whitespace.characters]
+space = "·"
+nbsp = "⍽"
+tab = "→"
+tabpad = "·"
+
+[editor.indent-guides]
+render = true
+character = "╎"
+skip-levels = 1   
+
+[keys.insert]
+"C-f" = "normal_mode"
